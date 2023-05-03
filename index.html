@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="./assets/images/Alien-Orb-Gif(Low-Quality).gif">
+    <title>The Anomaly</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./js/main.js" defer></script>  <!-- Scripts loaded with the defer attribute will load in the order they appear on the page -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body onload="scaleLoad()">
+
+    <div class="page">
+        <div class="orb-container">
+
+            <div id="whiteFade" class="white-fullscreen"></div>
+        
+            <img id="orb" class = "animated shake" src="./assets/images/Alien-Orb-Gif(Low-Quality).gif">
+            
+            <button id="myBtn" type="button" onclick="timeout_init(), showDiv(), showAnswer(), timeout_init_two(), disableBtn(), clearField(), shakeAnimation(), numberShow()"><h1 id="button-text">Question Anomaly</h1></button>
+        
+            <div id="main">
+                <p id="result"><!-- Result answers will appear here --></p>
+            </div>
+
+            <div class="text_and_btn">
+                <input id="text-box" size="40" placeholder="Write Your Question Here" value=""><!-- Use size="" to change width of text input field -->
+
+                <button id="myBtn-two" type="button" onclick="hideText(), changeTextTwo()"><h1 id="button-text-two">Hide Text</h1></button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+</body>
+</html>
